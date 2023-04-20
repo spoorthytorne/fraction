@@ -38,3 +38,22 @@ class Fraction {
     return new Fraction(newNumerator, newDenominator);
   }
 }
+
+class Fraction {
+  constructor(numerator, denominator) {
+    this.numerator = numerator;
+    this.denominator = denominator;
+  }
+
+  compare(other) {
+    const num1 = this.numerator * other.denominator;
+    const num2 = other.numerator * this.denominator;
+    if (num1 < num2) {
+      return -1;
+    } else if (num1 > num2) {
+      return 1;
+    } else {
+      return 0;
+    }
+  }
+}
