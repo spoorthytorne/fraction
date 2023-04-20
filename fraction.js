@@ -15,3 +15,17 @@ class Fraction {
     return new Fraction(newNumerator, newDenominator);
   }
 }
+
+class Fraction {
+  constructor(numerator, denominator) {
+    this.numerator = numerator;
+    this.denominator = denominator;
+  }
+
+  multiply(otherFraction) {
+    let newNumerator = this.numerator * otherFraction.numerator;
+    let newDenominator = this.denominator * otherFraction.denominator;
+    return new Fraction(newNumerator, newDenominator);
+  }
+}
+
