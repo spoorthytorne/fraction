@@ -8,5 +8,10 @@ class Fraction {
     const numerator = this.numerator * other.denominator;
     const denominator = this.denominator * other.numerator;
     return new Fraction(numerator, denominator);
-  }
+  }  
+  add(other) {
+    const newNumerator = this.numerator * other.denominator + this.denominator * other.numerator;
+    const newDenominator = this.denominator * other.denominator;
+    return new Fraction(newNumerator, newDenominator);
+  }
 }
